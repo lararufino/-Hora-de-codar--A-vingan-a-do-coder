@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 20</title>
+</head>
+<body>
+    <script>
+        //20- Escreva um programa para ler o número de lados de um polígono regular e a medida do lado (em cm).Calcular e imprimir o seguinte: Se o número de lados for igual a 3 escrever TRIÂNGULO e o valor do seu perímetro. Se o número de lados for igual a 4 escrever QUADRADO e o valor da sua área. Se o número de lados for igual a 5 escrever PENTÁGONO. Observação: Considere que o usuário só informará os valores 3, 4 ou 5. Caso o número de lados seja inferior a 3 escrever NÃO É UM POLÍGONO. Caso o número de lados seja superior a 5 escrever POLÍGONO NÃO IDENTIFICADO.
+
+        var lados = parseInt(prompt("Informe a quantidade de lados do polígono:"));
+        if (lados == 3) {
+            alert ("TRIÂNGULO. Seu perímetro é " + (lados + lados + lados));
+        };
+        if (lados == 4) {
+            alert ("QUADRADO. Seu perímetro é " + (lados + lados + lados));        
+        }
+        if (lados == 5){
+            alert ("PENTÁGONO. Seu perímetro é " + (lados + lados + lados));
+        };
+        if (lados < 3){
+            alert("NÃO É UM POLÍGONO!");
+        };
+        if (lados > 5){
+            alert("POLÍGONO NÃO IDENTIFICADO!");
+        };
+    </script>
+</body>
+</html>

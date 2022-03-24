@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício 18</title>
+</head>
+<body>
+    <script>
+        //Tendo como entrada a altura e o sexo (codificado da seguinte forma: 1: feminino 2: masculino) de uma pessoa, construa um programa que calcule e imprima seu peso ideal, utilizando as seguintes fórmulas: para homens: (72.7*h)-58; para mulheres: (62.1*h)-44.7; Observação: Altura = h (na fórmula acima)
+
+        var sexo = prompt("Escreva seu sexo");
+        var altura = parseFloat(prompt("Digite sua altura"));
+        var pesoF = altura * 62.1;
+        var pesoM = altura * 72.7;
+        if (sexo = "Feminino") {
+            alert ("Seu pesso ideal é: " + (pesoF - 44.7))
+        };
+        if (sexo = "Masculino") {
+            alert ("Seu peso ideal é: " + (pesoM - 58))
+        }
+    </script>
+</body>
+</html>

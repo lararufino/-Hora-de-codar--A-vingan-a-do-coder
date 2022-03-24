@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício doze</title>
+</head>
+<body>
+    <script>
+        //12-A equipe Mercedes deseja calcular o número mínimo de litros que deverá colocar no tanque de seu carro para que ele possa percorrer um determinado número de voltas até o primeiro reabastecimento.Escreva um programa que leia o comprimento da pista (em metros), o número total de voltas a serem percorridas no grande prêmio, o número de reabastecimentos desejados e o consumo de combustível do carro (em Km/L). O programa deve calcular e exibir o número mínimo de litros necessários para percorrer até o primeiro reabastecimento. Observação: considere que a quantidade de voltas entre os reabastecimentos é o mesmo, mas não poderá ser maior ou igual a 2. O usuário deve informar a quantidade de quilômetros total do circuito e a quantidade de litros que o carro pode possuir. 
+
+        var comprimentoPista = parseFloat(prompt("Digite o comprimento da pista (em metros): "));
+        var numeroVoltas = parseFloat(prompt("Digite o número total de voltas: "));
+        var numeroReabastecimento = parseFloat(prompt("Digite o número de reabastecimentos desejados: "));
+        var consumoCombustivel = parseFloat(prompt("Digite o consumo de combustível do carro (em Km/L): "));
+        var quantidadeCombustivel = parseFloat(prompt("Digite a quantidade de litros em que o carro pode possuir: "));
+
+        if (quantidadeCombustivel <= (((((comprimentoPista/1000))/numeroVoltas)/consumoCombustivel)*numeroVoltas)/numeroReabastecimento) {        
+            alert("VOCÊ PRECISA TER UM NÚMERO MAIOR DE REABASTECIMENTOS!!!")
+        } else {
+            document.write ("O número mínimo de litros necessários para percorrer até o primeiro reabastecimento é: " + (((((comprimentoPista/1000)/numeroVoltas)/consumoCombustivel)*numeroVoltas)/numeroReabastecimento) + "L")
+        }
+
+    </script>
+</body>
+</html>

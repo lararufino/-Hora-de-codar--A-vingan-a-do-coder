@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercício sete</title>
+</head>
+<body>
+    <script>
+        //7-Faça um programa que receba quatro valores informados pelo usuário, mas informe somente o primeiro, o último e o maior de todos eles (considere que todos os números informados serão diferentes)
+        var a = parseInt(prompt("digite um número"));
+        var b = parseInt(prompt("digite um número"));
+        var c = parseInt(prompt("digite um número"));
+        var d = parseInt(prompt("digite um número"));
+
+        if (a > b && a > c && a > d) {
+            document.write (a + ", ", d + ", ", a); 
+        }else if (b > a && b >c && b >d) {
+            document.write (a + ", ", d + ", ", b); 
+        }else if (c > a && c >b && c >d) {
+            document.write (a + ", ", d + ", ", c); 
+        }else if (d > a && d >b && d >c) {
+            document.write (a + ", ", d + ", ", d); 
+        }
+    </script>
+</body>
+</html>
